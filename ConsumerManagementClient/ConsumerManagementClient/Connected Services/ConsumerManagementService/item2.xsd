@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9000/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" />
+  <xs:element name="add">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="consumer" nillable="true" type="q1:Consumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="addResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getConsumerIDResult" nillable="true" type="q2:ArrayOfConsumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerFirstNameLike">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerFirstNameLikeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getConsumerFirstNameLikeResult" nillable="true" type="q3:ArrayOfConsumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerFirstName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerFirstNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getConsumerFirstNameResult" nillable="true" type="q4:ArrayOfConsumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerLastLike">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerLastLikeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getConsumerLastLikeResult" nillable="true" type="q5:ArrayOfConsumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerLastName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerLastNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getConsumerLastNameResult" nillable="true" type="q6:ArrayOfConsumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerCityLike">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerCityLikeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getConsumerCityLikeResult" nillable="true" type="q7:ArrayOfConsumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerCity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerCityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getConsumerCityResult" nillable="true" type="q8:ArrayOfConsumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDefaulter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="date" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDefaulterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getDefaulterResult" nillable="true" type="q9:ArrayOfConsumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRegular">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="date" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRegularResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getRegularResult" nillable="true" type="q10:ArrayOfConsumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerByBA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="billAmount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="condition" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsumerByBAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getConsumerByBAResult" nillable="true" type="q11:ArrayOfConsumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateConsumer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="consumer" nillable="true" type="q12:Consumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateConsumerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateConsumerResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getAllResult" nillable="true" type="q13:ArrayOfConsumer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deleteIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllLogin">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="getAllLoginResult" nillable="true" type="q14:ArrayOfLogin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatePassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="login" nillable="true" type="q15:Login" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatePasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updatePasswordResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="login" nillable="true" type="q16:Login" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="addLoginResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authenticate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" minOccurs="0" name="login" nillable="true" type="q17:Login" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="authenticateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="authenticateResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

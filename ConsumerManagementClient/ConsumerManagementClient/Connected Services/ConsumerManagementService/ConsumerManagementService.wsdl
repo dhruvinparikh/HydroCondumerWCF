@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ConsumerManagementService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9000/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9000/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ConsumerManagementService" />
+      <xsd:import schemaLocation="http://localhost:9000/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9000/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IConsumerManagementService_add_InputMessage">
+    <wsdl:part name="parameters" element="tns:add" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_add_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_add_ConsumerFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/ConsumerManagementService" name="detail" element="q1:ConsumerFault" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerID" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerID_ConsumerFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/ConsumerManagementService" name="detail" element="q2:ConsumerFault" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerFirstNameLike_InputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerFirstNameLike" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerFirstNameLike_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerFirstNameLikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerFirstNameLike_ConsumerFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/ConsumerManagementService" name="detail" element="q3:ConsumerFault" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerFirstName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerFirstName" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerFirstName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerFirstNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerLastLike_InputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerLastLike" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerLastLike_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerLastLikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerLastLike_ConsumerFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/ConsumerManagementService" name="detail" element="q4:ConsumerFault" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerLastName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerLastName" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerLastName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerLastNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerCityLike_InputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerCityLike" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerCityLike_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerCityLikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerCityLike_ConsumerFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/ConsumerManagementService" name="detail" element="q5:ConsumerFault" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerCity" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getDefaulter_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDefaulter" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getDefaulter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDefaulterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getDefaulter_ConsumerFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/ConsumerManagementService" name="detail" element="q6:ConsumerFault" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getRegular_InputMessage">
+    <wsdl:part name="parameters" element="tns:getRegular" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getRegular_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRegularResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getRegular_ConsumerFaultFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/ConsumerManagementService" name="detail" element="q7:ConsumerFault" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerByBA_InputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerByBA" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerByBA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getConsumerByBAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getConsumerByBA_ConsumerFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/ConsumerManagementService" name="detail" element="q8:ConsumerFault" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_updateConsumer_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateConsumer" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_updateConsumer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateConsumerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_updateConsumer_ConsumerFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/ConsumerManagementService" name="detail" element="q9:ConsumerFault" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAll" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_deleteID_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteID" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_deleteID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_deleteID_ConsumerFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/ConsumerManagementService" name="detail" element="q10:ConsumerFault" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getAllLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllLogin" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_getAllLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_updatePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatePassword" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_updatePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_addLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:addLogin" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_addLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_authenticate_InputMessage">
+    <wsdl:part name="parameters" element="tns:authenticate" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_authenticate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:authenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsumerManagementService_authenticate_ConsumerFaultFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/ConsumerManagementService" name="detail" element="q11:ConsumerFault" />
+  </wsdl:message>
+  <wsdl:portType name="IConsumerManagementService">
+    <wsdl:operation name="add">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/add" message="tns:IConsumerManagementService_add_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/addResponse" message="tns:IConsumerManagementService_add_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IConsumerManagementService/addConsumerFaultFault" name="ConsumerFaultFault" message="tns:IConsumerManagementService_add_ConsumerFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerID" message="tns:IConsumerManagementService_getConsumerID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerIDResponse" message="tns:IConsumerManagementService_getConsumerID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerIDConsumerFaultFault" name="ConsumerFaultFault" message="tns:IConsumerManagementService_getConsumerID_ConsumerFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerFirstNameLike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerFirstNameLike" message="tns:IConsumerManagementService_getConsumerFirstNameLike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerFirstNameLikeResponse" message="tns:IConsumerManagementService_getConsumerFirstNameLike_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerFirstNameLikeConsumerFaultFault" name="ConsumerFaultFault" message="tns:IConsumerManagementService_getConsumerFirstNameLike_ConsumerFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerFirstName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerFirstName" message="tns:IConsumerManagementService_getConsumerFirstName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerFirstNameResponse" message="tns:IConsumerManagementService_getConsumerFirstName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerLastLike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerLastLike" message="tns:IConsumerManagementService_getConsumerLastLike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerLastLikeResponse" message="tns:IConsumerManagementService_getConsumerLastLike_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerLastLikeConsumerFaultFault" name="ConsumerFaultFault" message="tns:IConsumerManagementService_getConsumerLastLike_ConsumerFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerLastName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerLastName" message="tns:IConsumerManagementService_getConsumerLastName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerLastNameResponse" message="tns:IConsumerManagementService_getConsumerLastName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerCityLike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerCityLike" message="tns:IConsumerManagementService_getConsumerCityLike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerCityLikeResponse" message="tns:IConsumerManagementService_getConsumerCityLike_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerCityLikeConsumerFaultFault" name="ConsumerFaultFault" message="tns:IConsumerManagementService_getConsumerCityLike_ConsumerFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerCity" message="tns:IConsumerManagementService_getConsumerCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerCityResponse" message="tns:IConsumerManagementService_getConsumerCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDefaulter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getDefaulter" message="tns:IConsumerManagementService_getDefaulter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getDefaulterResponse" message="tns:IConsumerManagementService_getDefaulter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IConsumerManagementService/getDefaulterConsumerFaultFault" name="ConsumerFaultFault" message="tns:IConsumerManagementService_getDefaulter_ConsumerFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRegular">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getRegular" message="tns:IConsumerManagementService_getRegular_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getRegularResponse" message="tns:IConsumerManagementService_getRegular_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IConsumerManagementService/getRegularConsumerFaultFault" name="ConsumerFaultFault" message="tns:IConsumerManagementService_getRegular_ConsumerFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerByBA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerByBA" message="tns:IConsumerManagementService_getConsumerByBA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerByBAResponse" message="tns:IConsumerManagementService_getConsumerByBA_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IConsumerManagementService/getConsumerByBAConsumerFaultFault" name="ConsumerFaultFault" message="tns:IConsumerManagementService_getConsumerByBA_ConsumerFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateConsumer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/updateConsumer" message="tns:IConsumerManagementService_updateConsumer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/updateConsumerResponse" message="tns:IConsumerManagementService_updateConsumer_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IConsumerManagementService/updateConsumerConsumerFaultFault" name="ConsumerFaultFault" message="tns:IConsumerManagementService_updateConsumer_ConsumerFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getAll" message="tns:IConsumerManagementService_getAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getAllResponse" message="tns:IConsumerManagementService_getAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/deleteID" message="tns:IConsumerManagementService_deleteID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/deleteIDResponse" message="tns:IConsumerManagementService_deleteID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IConsumerManagementService/deleteIDConsumerFaultFault" name="ConsumerFaultFault" message="tns:IConsumerManagementService_deleteID_ConsumerFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/getAllLogin" message="tns:IConsumerManagementService_getAllLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/getAllLoginResponse" message="tns:IConsumerManagementService_getAllLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/updatePassword" message="tns:IConsumerManagementService_updatePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/updatePasswordResponse" message="tns:IConsumerManagementService_updatePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/addLogin" message="tns:IConsumerManagementService_addLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/addLoginResponse" message="tns:IConsumerManagementService_addLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="authenticate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsumerManagementService/authenticate" message="tns:IConsumerManagementService_authenticate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsumerManagementService/authenticateResponse" message="tns:IConsumerManagementService_authenticate_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IConsumerManagementService/authenticateConsumerFaultFault" name="ConsumerFaultFault" message="tns:IConsumerManagementService_authenticate_ConsumerFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IConsumerManagementService" type="tns:IConsumerManagementService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="add">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/add" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ConsumerFaultFault">
+        <soap:fault use="literal" name="ConsumerFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerID">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getConsumerID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ConsumerFaultFault">
+        <soap:fault use="literal" name="ConsumerFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerFirstNameLike">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getConsumerFirstNameLike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ConsumerFaultFault">
+        <soap:fault use="literal" name="ConsumerFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerFirstName">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getConsumerFirstName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerLastLike">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getConsumerLastLike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ConsumerFaultFault">
+        <soap:fault use="literal" name="ConsumerFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerLastName">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getConsumerLastName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerCityLike">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getConsumerCityLike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ConsumerFaultFault">
+        <soap:fault use="literal" name="ConsumerFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerCity">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getConsumerCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDefaulter">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getDefaulter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ConsumerFaultFault">
+        <soap:fault use="literal" name="ConsumerFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getRegular">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getRegular" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ConsumerFaultFault">
+        <soap:fault use="literal" name="ConsumerFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getConsumerByBA">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getConsumerByBA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ConsumerFaultFault">
+        <soap:fault use="literal" name="ConsumerFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateConsumer">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/updateConsumer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ConsumerFaultFault">
+        <soap:fault use="literal" name="ConsumerFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAll">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteID">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/deleteID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ConsumerFaultFault">
+        <soap:fault use="literal" name="ConsumerFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllLogin">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/getAllLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatePassword">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/updatePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLogin">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/addLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="authenticate">
+      <soap:operation soapAction="http://tempuri.org/IConsumerManagementService/authenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ConsumerFaultFault">
+        <soap:fault use="literal" name="ConsumerFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ConsumerManagementService">
+    <wsdl:port name="BasicHttpBinding_IConsumerManagementService" binding="tns:BasicHttpBinding_IConsumerManagementService">
+      <soap:address location="http://localhost:9000/ConsumerManagementService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

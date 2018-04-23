@@ -1,0 +1,14 @@
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\ConsumerManagementService\ConsumerManagementService\bin\Debug\ConsumerManagementService.dll.config
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\ConsumerManagementService\ConsumerManagementService\bin\Debug\ConsumerManagementService.dll
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\ConsumerManagementService\ConsumerManagementService\bin\Debug\ConsumerManagementService.pdb
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\ConsumerManagementService\ConsumerManagementService\obj\Debug\ConsumerManagementService.csproj.CoreCompileInputs.cache
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\ConsumerManagementService\ConsumerManagementService\obj\Debug\ConsumerManagementService.dll
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\ConsumerManagementService\ConsumerManagementService\obj\Debug\ConsumerManagementService.pdb
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\ConsumerManagementService\ConsumerManagementService\obj\Debug\ConsumerManagementService.csprojResolveAssemblyReference.cache
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\HydroCondumerWCF\ConsumerManagementService\ConsumerManagementService\bin\Debug\ConsumerManagementService.dll.config
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\HydroCondumerWCF\ConsumerManagementService\ConsumerManagementService\bin\Debug\ConsumerManagementService.dll
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\HydroCondumerWCF\ConsumerManagementService\ConsumerManagementService\bin\Debug\ConsumerManagementService.pdb
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\HydroCondumerWCF\ConsumerManagementService\ConsumerManagementService\obj\Debug\ConsumerManagementService.csprojResolveAssemblyReference.cache
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\HydroCondumerWCF\ConsumerManagementService\ConsumerManagementService\obj\Debug\ConsumerManagementService.csproj.CoreCompileInputs.cache
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\HydroCondumerWCF\ConsumerManagementService\ConsumerManagementService\obj\Debug\ConsumerManagementService.dll
+C:\humber\Info-Tech-Soln-S\Sem-4\DistributedApplUsing.NET\week10\HydroCondumerWCF\ConsumerManagementService\ConsumerManagementService\obj\Debug\ConsumerManagementService.pdb

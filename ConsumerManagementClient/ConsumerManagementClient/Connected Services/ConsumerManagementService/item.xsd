@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ConsumerManagementService.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Consumer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BillAmount" type="xs:double" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConsumerID" type="xs:long" />
+      <xs:element minOccurs="0" name="DueDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Consumer" nillable="true" type="tns:Consumer" />
+  <xs:complexType name="ArrayOfConsumer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Consumer" nillable="true" type="tns:Consumer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumer" nillable="true" type="tns:ArrayOfConsumer" />
+  <xs:complexType name="ArrayOfLogin">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Login" nillable="true" type="tns:Login" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLogin" nillable="true" type="tns:ArrayOfLogin" />
+  <xs:complexType name="Login">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Login" nillable="true" type="tns:Login" />
+</xs:schema>
