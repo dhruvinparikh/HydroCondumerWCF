@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.ServiceModel;
 using System.Web;
 using System.Web.UI;
@@ -38,6 +40,18 @@ namespace ConsumerManagementClient
                 catch (FaultException<ConsumerManagementService.ConsumerFault> obj)
                 {
                     lblError.Text = obj.Detail.Error + " : " + obj.Detail.Details;
+                }
+                catch(SocketException obj)
+                {
+                    lblError.Text = "Web service is not reachable :(";
+                }
+                catch (WebException obj)
+                {
+                    lblError.Text = "Web service is not reachable :(";
+                }
+                catch (EndpointNotFoundException obj)
+                {
+                    lblError.Text = "Web service is not reachable :(";
                 }
             }
             else if (sender == btnReset)

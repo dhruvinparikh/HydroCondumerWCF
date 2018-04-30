@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.ServiceModel;
 using System.Web;
 using System.Web.UI;
@@ -48,6 +50,21 @@ namespace ConsumerManagementClient
                     lblError.Text = obj.Detail.Error+" : " + obj.Detail.Details;
                     consumerlist.DataSource = null;
                     consumerlist.DataBind();
+                }
+                catch (SocketException obj)
+                {
+                    Session.Abandon();
+                    Response.Redirect("Login.aspx");
+                }
+                catch (WebException obj)
+                {
+                    Session.Abandon();
+                    Response.Redirect("Login.aspx");
+                }
+                catch (EndpointNotFoundException obj)
+                {
+                    Session.Abandon();
+                    Response.Redirect("Login.aspx");
                 }
             }
         }
